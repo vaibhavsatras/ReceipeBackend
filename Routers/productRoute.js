@@ -1,5 +1,5 @@
 const express = require('express');
-const { getProducts,searchProducts, searchProduct, getData } = require('../controlers/products');
+const { getProducts,searchProducts, getData } = require('../controlers/products');
 const router = express.Router();
 const {userAuthintication}  = require('../middleware/userAuth')
 

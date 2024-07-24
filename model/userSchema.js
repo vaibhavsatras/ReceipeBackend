@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 const validator = require("email-validator");
-const {createHmac,randomBytes, hash}  = require('crypto');
+const {createHmac,randomBytes}  = require('crypto');
 const { Authorization } = require('../Auth/auth');
 
 
