@@ -10,7 +10,7 @@ const userRoute = require('./Routers/userRouter')
 const app = express();
 const PORT =  process.env.PORT || 5000
 
-
+app.use(express.json())
 app.use(cors({
 
     origin:["http://localhost:3000/home"],
@@ -18,7 +18,7 @@ app.use(cors({
     credential: true
 
 }))
-app.use(express.json())
+
 
 
 app.get('/home',(req,resp)=>{
