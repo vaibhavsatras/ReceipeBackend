@@ -5,20 +5,19 @@ const router = require('./Routers/productRoute');
 const catroute = require('./Routers/catagoryRoute')
 const blogRoute = require('./Routers/blogRouter')
 const contactRoute = require('./Routers/contactRoute')
+const cors = require('cors')
 const userRoute = require('./Routers/userRouter') 
 const app = express();
 const PORT =  process.env.PORT || 5000
-const cors = require('cors')
 
-const corConfig = {
 
-    origin:['http://localhost:3000/'],
-    methods:['GET','POST'],
+app.use(cors({
+
+    origin:["http://localhost:3000/home"],
+    methods:["GET","POST"],
     credential: true
 
-}
-
-app.use(cors(corConfig))
+}))
 app.use(express.json())
 
 
