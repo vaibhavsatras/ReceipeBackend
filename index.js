@@ -12,7 +12,7 @@ const cors = require('cors')
 
 const corConfig = {
 
-    origin:['http://localhost:300/home'],
+    origin:['http://localhost:3000/home'],
     methods:['GET','POST'],
     credential: true
 
