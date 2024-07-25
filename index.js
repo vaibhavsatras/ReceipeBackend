@@ -6,11 +6,12 @@ const router = require('./Routers/productRoute');
 const catroute = require('./Routers/catagoryRoute')
 const blogRoute = require('./Routers/blogRouter')
 const contactRoute = require('./Routers/contactRoute')
-const cors = require('cors')
+
 const userRoute = require('./Routers/userRouter') 
 
 const PORT =  process.env.PORT || 5000
 
+const cors = require('cors')
 app.use(express.json())
 app.use(cors({
 
