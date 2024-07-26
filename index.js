@@ -15,7 +15,7 @@ const cors = require('cors')
 app.use(express.json())
 app.use(cors({
 
-    origin:["https://food-receipe-three.vercel.ap"],
+    origin:["https://food-receipe-three.vercel.app"],
     methods:["GET","POST"],
     credential: true
 
