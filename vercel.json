@@ -1,6 +1,7 @@
 {
 
     "version":2,
+    "name":"Food Receipe",
     "builds":[
         {
             "src":"index.js",
